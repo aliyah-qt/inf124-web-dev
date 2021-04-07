@@ -1,3 +1,29 @@
-#p {
-  width: auto;
+
+.boba-header {
+  margin-bottom: 100px;
+}
+
+#title {
+  background-color: grey;
+  padding: 3% 15% 7%;
+}
+
+#menu {
+  background-color: red;
+  padding: 7% 15%;
+}
+
+#about-us {
+  background-color: blue;
+  padding: 7% 15%;
+}
+
+#contact-us {
+  background-color: yellow;
+  padding: 7% 15%;
+}
+
+#footer {
+  background-color: green;
+  padding: 7% 15%;
 }

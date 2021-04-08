@@ -1,29 +1,20 @@
-
-.boba-header {
-  margin-bottom: 100px;
+.menu td{
+  width: 20%;
+  height: 2em;
+  border: 1px solid #ccc;
+  text-align: center;
 }
-
-#title {
-  background-color: grey;
-  padding: 3% 15% 7%;
+.menu img{
+  width: 15vw;
+  height: 12vw;
 }
-
-#menu {
-  background-color: red;
-  padding: 7% 15%;
+.menu a{
+  color: black;
+  text-decoration: none;
+  
 }
-
-#about-us {
-  background-color: blue;
-  padding: 7% 15%;
-}
-
-#contact-us {
-  background-color: yellow;
-  padding: 7% 15%;
-}
-
-#footer {
-  background-color: green;
-  padding: 7% 15%;
+.menu a:hover{
+  color: purple;
+  text-decoration: none;
+  
 }

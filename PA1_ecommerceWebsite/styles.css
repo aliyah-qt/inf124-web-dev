@@ -1,3 +1,30 @@
+
+/* ids */
+#menu {
+  background-color: red;
+  padding: 7% 15%;
+}
+
+#about-us {
+  background-color: blue;
+  padding: 7% 15%;
+}
+
+#contact-us {
+  background-color: yellow;
+  padding: 7% 15%;
+}
+
+#footer {
+  background-color: green;
+  padding: 3% 15%;
+}
+
+
+/* classes */
+.boba-header {
+  margin-bottom: 100px;
+}
 .menu td{
   width: 20%;
   height: 2em;
@@ -11,10 +38,10 @@
 .menu a{
   color: black;
   text-decoration: none;
-  
+
 }
 .menu a:hover{
   color: purple;
   text-decoration: none;
-  
+
 }

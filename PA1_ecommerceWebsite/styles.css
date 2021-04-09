@@ -22,8 +22,24 @@
 
 
 /* classes */
+.navbar {
+  display: inline;
+  padding: 0 9%;
+}
+.navbar-container {
+  margin-bottom: 2%;
+  margin: 0;
+}
+
+.grid-item {
+
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
 .boba-header {
-  margin-bottom: 100px;
+  text-align: center;
+  margin-top: 7%;
 }
 .menu td{
   width: 20%;

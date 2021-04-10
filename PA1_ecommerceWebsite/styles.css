@@ -66,6 +66,15 @@
 .navbar {
   display: inline;
   padding: 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar:hover{
+  text-decoration: underline;
+
 }
 .navbar-container {
   margin-bottom: 2%;
@@ -89,9 +98,19 @@
   font-size: 15px;
   text-align: center;
 }
+
+header{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  
+}
 .boba-header {
   text-align: center;
-  margin-top: 7%;
+  margin-top: 3%;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .menu td{
   width: 20%;
@@ -112,4 +131,16 @@
   color: purple;
   text-decoration: none;
 
+}
+
+.prod-view img {
+  padding-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.prod-view p{
+  text-align: center;
 }

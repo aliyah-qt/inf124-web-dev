@@ -29,49 +29,75 @@
 
 
 </div>
+<br>
 
 <!-- order form -->
-<!-- Aliyah's plans to make form have a double border or solid border -->
-<form>
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Product Order Form</legend>
+    <br>
     <label for="pid">Product Identifier:</label><br>
       <input type="text" id="pid" name="pid"><br>   <!-- input type as text instead of number just in case identifier contains numbers AND letters -->
-  
+
     <br>
-  
+
     <label for="qty">Quantity:</label><br>
       <input type="number" id="qty" name="qty" min="1" max="5"><br>
-  
+
     <br>
-  
+
     <label for="fname">First Name:</label><br>
       <input type="text" id="fname" name="fname"><br>
-  
+
     <br>
-  
+
     <label for="lname">Last Name:</label><br>
       <input type="text" id="lname" name="lname"><br>
-  
+
     <br>
-  
+
     <label for="phone">Phone Number:</label><br>
       <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
-  
+
     <br>
-  
+
     <label for="ship_addr">Shipping Address:</label><br>
       <input type="text" id="ship_addr" name="ship_addr"><br>
-  
+
     <br>
-  
-  <!-- plans to make the below have radio button options: overnight, 2-day expedited, 6-days ground -->
+
     <label for="ship_method">Shipping Method:</label><br>
-      <input type="number" id="qty" name="qty"><br>
-  
+      <input type="radio" id="overnight" name="ship_method" value="overnight">
+      <label for="overnight">Overnight</label><br>
+
+      <input type="radio" id="2day" name="ship_method" value="2day">
+      <label for="2day">2-day expedited</label><br>
+
+      <input type="radio" id="6day" name="ship_method" value="6day">
+      <label for="6day">6-days ground</label><br>
+
     <br>
-  
-    <label for="credit_card">Credit Card Information:</label><br>
-      <input type="number" id="qty" name="qty"><br>
+
+    <label for="credit_card">Credit Card Information</label><br>
+      <label for="card_num">Card Number:</label><br>
+      <input type="number" id="card_num" name="card_num"><br><br>
+
+      <!-- 2 different drop down menus.
+           First menu options: 01-12.
+           Second menu options: 22-41 -->
+      <label for="card_num">Expiry Date:</label><br>
+      <input type="number" id="card_num" name="card_num"><br><br>
+
+      <!-- 3 digit number -->
+      <label for="card_num">Security Code:</label><br>
+      <input type="number" id="card_num" name="card_num"><br><br>
+
+    <br>
+    <br>
+
+    <input type="submit" value="Submit">
+  </fieldset>
   </form>
-    
+
 </body>
 </html>

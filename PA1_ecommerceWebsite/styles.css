@@ -36,13 +36,21 @@
 
 /* ids */
 #menu {
-  background-color: red;
+  /* background-color: red; */
+  text-align: center;
   padding: 40px 20px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  
 
 }
 
 #about-us {
-  background-color: blue;
+  /* background-color: blue; */
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  
   /* padding: 7% 15%; */
 }
 
@@ -83,7 +91,7 @@
   text-align: center;
 }
 
-.grid-container {
+/* .grid-container {
   display: inline-grid;
   padding: 0 150px;
   width: 20%;
@@ -98,13 +106,16 @@
 .grid-item-text {
   font-size: 15px;
   text-align: center;
-}
+} */
 
 header{
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 999;
   background-color: white;
+  border-bottom: solid;
+  
 
 }
 .boba-header {
@@ -116,7 +127,7 @@ header{
 .menu td{
   width: 20%;
   height: 2em;
-  border: 1px solid #ccc;
+  border: none;
   text-align: center;
 }
 .menu img{
@@ -128,8 +139,8 @@ header{
   text-decoration: none;
 
 }
-.menu a:hover{
-  color: purple;
+.menu td:hover{
+  background-color: orange;
   text-decoration: none;
 
 }
@@ -144,4 +155,49 @@ header{
 
 .prod-view p{
   text-align: center;
+}
+
+
+.cover{
+  top: 0;
+  position: relative;
+  padding-bottom: 100px;
+}
+.cover img{
+      max-width: 100%;
+      max-height: auto;
+      font-size: 0; 
+       
+  
+}
+.cover img:hover{
+  opacity: 0.8;
+}
+
+
+.cover p{
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 1vw;
+  background-color: black;
+  border: 2px solid snow;
+  padding: 14px 16px;
+  z-index: 998;
+  position: absolute;
+  bottom: 170px;
+  left: 30px;
+  color: snow;
+
+}
+
+footer{
+  border-top: solid;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+footer p{
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 0.8vw;
+  padding-right: 20px;
 }

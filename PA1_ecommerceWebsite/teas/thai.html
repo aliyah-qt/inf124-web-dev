@@ -1,58 +1,135 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thai Tea</title>
-
     <link rel="stylesheet" href="styles.css">
-  </head>
+    <title>Thai Iced Tea</title>
+</head>
+<header>
+  <h1 class="boba-header">Unoriginal Boba Store</h1>
+
+    <div class="navbar-container">
+
+      <a class="navbar" href="#about-us">About Us</a>
+      <a class="navbar" href="index.html#menu">Menu</a>
+      <a class="navbar" href="#footer">Location</a>
+      <a class="navbar" href="#contact-us">Contact Us</a>
+
+    </div>
+</header>
+<body>
+  <div class="prod-view">
+    <!-- more images of black tea -->
+    <img src="images/thaitea.jpeg" alt="thai iced tea">
+
+<!-- detailed description of black tea -->
+    <p>Caffeinated black tea with creamer.</p>
 
 
-<!-- more images of thai tea -->
-
-<!-- detailed description of thai tea -->
+</div>
+<br>
 
 <!-- order form -->
-<!-- Aliyah's plans to make form have a double border or solid border -->
-<form>
-  <label for="pid">Product Identifier:</label><br>
-    <input type="text" id="pid" name="pid"><br>   <!-- input type as text instead of number just in case identifier contains numbers AND letters -->
+<!-- Currently not displaying body of email -->
+<form action="mailto:anteater@uci.edu?subject=Purchase%20Order%20Information&body=sample%20body"
+  method="POST"
+  enctype="multipart/form-data"
+  name="PurchaseOrderForm">
+  <fieldset>
+    <legend>Purchase Order Form</legend>
+    <br>
+    <label for="pid">Product Identifier:</label><br>
+      <input type="text" id="pid" name="pid"><br>   <!-- input type as text instead of number just in case identifier contains numbers AND letters -->
 
-  <br>
+    <br>
 
-  <label for="qty">Quantity:</label><br>
-    <input type="number" id="qty" name="qty" min="1" max="5"><br>
+    <label for="qty">Quantity:</label><br>
+      <input type="number" id="qty" name="qty" min="1" max="5"><br>
 
-  <br>
+    <br>
 
-  <label for="fname">First Name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
+    <label for="fname">First Name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
 
-  <br>
+    <br>
 
-  <label for="lname">Last Name:</label><br>
-    <input type="text" id="lname" name="lname"><br>
+    <label for="lname">Last Name:</label><br>
+      <input type="text" id="lname" name="lname"><br>
 
-  <br>
+    <br>
 
-  <label for="phone">Phone Number:</label><br>
-    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+    <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
 
-  <br>
+    <br>
 
-  <label for="ship_addr">Shipping Address:</label><br>
-    <input type="text" id="ship_addr" name="ship_addr"><br>
+    <label for="ship_addr">Shipping Address:</label>
+    <br>
+      <textarea name="ship_addr" rows="10" cols="30">
+      </textarea>
 
-  <br>
+    <br>
 
-<!-- plans to make the below have radio button options: overnight, 2-day expedited, 6-days ground -->
-  <label for="ship_method">Shipping Method:</label><br>
-    <input type="number" id="qty" name="qty"><br>
+    <label for="ship_method">Shipping Method:</label><br>
+      <input type="radio" id="overnight" name="ship_method" value="overnight">
+      <label for="overnight">Overnight</label><br>
 
-  <br>
+      <input type="radio" id="2day" name="ship_method" value="2day">
+      <label for="2day">2-day expedited</label><br>
 
-  <label for="credit_card">Credit Card Information:</label><br>
-    <input type="number" id="qty" name="qty"><br>
-</form>
+      <input type="radio" id="6day" name="ship_method" value="6day">
+      <label for="6day">6-days ground</label><br>
+
+    <br>
+
+    <label for="credit_card">Credit Card Information</label><br>
+      <label for="card_num">Card Number:</label><br>
+      <input type="number" id="card_num" name="card_num"><br><br>
+
+      <label for="expiry1">Expiry Date:</label><br>
+      <select id="expiry1" name="expiry1">
+        <option value="january">01</option>
+        <option value="february">02</option>
+        <option value="march">03</option>
+        <option value="april">04</option>
+        <option value="may">05</option>
+        <option value="june">06</option>
+        <option value="july">07</option>
+        <option value="august">08</option>
+        <option value="september">09</option>
+        <option value="october">10</option>
+        <option value="november">11</option>
+        <option value="december">12</option>
+      </select>
+
+      <select id="expiry2" name="expiry2">
+        <option value="2021">21</option>
+        <option value="2022">22</option>
+        <option value="2023">23</option>
+        <option value="2024">24</option>
+        <option value="2025">25</option>
+        <option value="2026">26</option>
+        <option value="2027">27</option>
+        <option value="2028">28</option>
+        <option value="2029">29</option>
+        <option value="2030">30</option>
+      </select>
+
+      <br>
+      <br>
+
+      <!-- 3 digit number -->
+      <label for="sCode">Security Code:</label><br>
+      <input type="number" id="sCode" name="sCode"><br><br>
+
+    <br>
+    <br>
+
+    <input type="submit" value="Submit">
+  </fieldset>
+  </form>
+
+</body>
 </html>

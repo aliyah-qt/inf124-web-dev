@@ -32,9 +32,13 @@
 <br>
 
 <!-- order form -->
-<form action="/action_page.php">
+<!-- Currently not displaying body of email -->
+<form action="mailto:anteater@uci.edu?subject=Purchase%20Order%20Information&body=sample%20body"
+  method="POST"
+  enctype="multipart/form-data"
+  name="PurchaseOrderForm">
   <fieldset>
-    <legend>Product Order Form</legend>
+    <legend>Purchase Order Form</legend>
     <br>
     <label for="pid">Product Identifier:</label><br>
       <input type="text" id="pid" name="pid"><br>   <!-- input type as text instead of number just in case identifier contains numbers AND letters -->
@@ -61,8 +65,10 @@
 
     <br>
 
-    <label for="ship_addr">Shipping Address:</label><br>
-      <input type="text" id="ship_addr" name="ship_addr"><br>
+    <label for="ship_addr">Shipping Address:</label>
+    <br>
+      <textarea name="ship_addr" rows="10" cols="30">
+      </textarea>
 
     <br>
 
@@ -82,15 +88,41 @@
       <label for="card_num">Card Number:</label><br>
       <input type="number" id="card_num" name="card_num"><br><br>
 
-      <!-- 2 different drop down menus.
-           First menu options: 01-12.
-           Second menu options: 22-41 -->
-      <label for="card_num">Expiry Date:</label><br>
-      <input type="number" id="card_num" name="card_num"><br><br>
+      <label for="expiry1">Expiry Date:</label><br>
+      <select id="expiry1" name="expiry1">
+        <option value="january">01</option>
+        <option value="february">02</option>
+        <option value="march">03</option>
+        <option value="april">04</option>
+        <option value="may">05</option>
+        <option value="june">06</option>
+        <option value="july">07</option>
+        <option value="august">08</option>
+        <option value="september">09</option>
+        <option value="october">10</option>
+        <option value="november">11</option>
+        <option value="december">12</option>
+      </select>
+
+      <select id="expiry2" name="expiry2">
+        <option value="2021">21</option>
+        <option value="2022">22</option>
+        <option value="2023">23</option>
+        <option value="2024">24</option>
+        <option value="2025">25</option>
+        <option value="2026">26</option>
+        <option value="2027">27</option>
+        <option value="2028">28</option>
+        <option value="2029">29</option>
+        <option value="2030">30</option>
+      </select>
+
+      <br>
+      <br>
 
       <!-- 3 digit number -->
-      <label for="card_num">Security Code:</label><br>
-      <input type="number" id="card_num" name="card_num"><br><br>
+      <label for="sCode">Security Code:</label><br>
+      <input type="number" id="sCode" name="sCode"><br><br>
 
     <br>
     <br>

@@ -33,16 +33,18 @@
 
 <!-- order form -->
 <!-- Currently not displaying body of email -->
-<form action="mailto:anteater@uci.edu?subject=Purchase%20Order%20Information&body=sample%20body"
+<form name="PurchaseOrderForm"
+  onsubmit="return validateForm()"
+  action="mailto:anteater@uci.edu?subject=Purchase%20Order%20Information&body=sample%20body"
   method="POST"
-  enctype="multipart/form-data"
-  name="PurchaseOrderForm">
+  enctype="multipart/form-data">
   <fieldset>
     <legend>Purchase Order Form</legend>
     <br>
     <label for="pid">Product Identifier:</label><br>
-      <input type="text" id="pid" maxlength="25" name="pid" pattern="[A-Za-z\sA-Za-z\sA-Za-z\s]{13,25}" placeholder="i.e. Black Milk Tea" required><br>   <!-- input type as text given identifier is the name of the drink -->
-
+      <input type="text" id="pid" name="pid" placeholder="i.e. Black Milk Tea" required><br>   <!-- input type as text given identifier is the name of the drink -->
+<!--maxlength="25" -->
+<!--pattern="[A-Za-z\sA-Za-z\sA-Za-z\s]{13,25}"-->
     <br>
 
     <label for="qty">Quantity:</label><br>
@@ -132,6 +134,29 @@
   </form>
 
 </body>
+
+<!-- beginning of form validation (Javascript) -->
+<script>
+function validateForm(){
+  //var x = document.forms["PurchaseOrderForm"]["pid"].value;
+  var id = document.getElementById("pid").value;
+  submitOK = "true";
+
+  if(id.compareTo("Thai Iced Tea") != 0 || id != Jasmine Milk Tea || id != Black Milk Tea ||
+     id != Peach Green Tea || id != Taro Milk Tea || id != Coffee Milk Tea ||
+     id != Earl Grey Milk Tea || id != Panda Milk Tea || id != Oolong Milk Tea ||
+     id != Mango Lychee Tea){
+          alert("Please enter a valid product identifier.");
+          alert(id);
+          submitOK = "false";
+     }
+
+  if(submitOK == "false"){
+    return false;
+  }
+  console.log(getInputValueById("pid"));
+}
+</script>
 </html>
 
 <!-- Form data validation checklist

@@ -41,7 +41,7 @@
   padding: 40px 20px;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
-  
+
 
 }
 
@@ -50,7 +50,7 @@
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   text-transform: uppercase;
-  
+
   /* padding: 7% 15%; */
 }
 
@@ -91,23 +91,6 @@
   text-align: center;
 }
 
-/* .grid-container {
-  display: inline-grid;
-  padding: 0 150px;
-  width: 20%;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto auto;
-}
-.grid-item {
-  width: 200px;
-  height: 400px;
-  padding: 5px;
-}
-.grid-item-text {
-  font-size: 15px;
-  text-align: center;
-} */
-
 header{
   position: -webkit-sticky;
   position: sticky;
@@ -115,7 +98,7 @@ header{
   z-index: 999;
   background-color: white;
   border-bottom: solid;
-  
+
 
 }
 .boba-header {
@@ -123,6 +106,42 @@ header{
   margin-top: 3%;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
+}
+.team-header{
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.team-header p {
+  text-transform: none;
+  margin-bottom: 7%;
+}
+.team-header hr{
+  border-style: dotted;
+  border-spacing: 6px;
+  border-bottom: none;
+  border-width: 4%;
+
+}
+.team img {
+  border: 3px solid black;
+  padding: 5px;
+  margin: 15px;
+  width: 200px;
+  height: 300px;
+
+}
+.team p {
+  color: black;
+  text-align: left;
+  /* padding-bottom: 300px; */
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.team-text {
+  padding-bottom: 180px
 }
 .menu td{
   width: 20%;
@@ -166,9 +185,9 @@ header{
 .cover img{
       max-width: 100%;
       max-height: auto;
-      font-size: 0; 
-       
-  
+      font-size: 0;
+
+
 }
 .cover img:hover{
   opacity: 0.8;
@@ -193,7 +212,7 @@ header{
 footer{
   border-top: solid;
   font-family: Arial, Helvetica, sans-serif;
-  
+
 }
 footer p{
   text-align: right;

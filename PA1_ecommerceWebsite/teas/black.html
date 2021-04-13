@@ -41,38 +41,38 @@
     <legend>Purchase Order Form</legend>
     <br>
     <label for="pid">Product Identifier:</label><br>
-      <input type="text" id="pid" name="pid"><br>   <!-- input type as text instead of number just in case identifier contains numbers AND letters -->
+      <input type="text" id="pid" maxlength="25" name="pid" pattern="[A-Za-z\sA-Za-z\sA-Za-z\s]{13,25}" placeholder="i.e. Black Milk Tea" required><br>   <!-- input type as text given identifier is the name of the drink -->
 
     <br>
 
     <label for="qty">Quantity:</label><br>
-      <input type="number" id="qty" name="qty" min="1" max="5"><br>
+      <input type="number" id="qty" name="qty" min="1" max="5" required><br>
 
     <br>
 
     <label for="fname">First Name:</label><br>
-      <input type="text" id="fname" name="fname"><br>
+      <input type="text" id="fname" maxlength="32" name="fname" pattern="[A-Za-z]{1,32}" required><br>
 
     <br>
 
     <label for="lname">Last Name:</label><br>
-      <input type="text" id="lname" name="lname"><br>
+      <input type="text" id="lname" maxlength="32" name="lname" pattern="[A-Za-z]{1,32}" required><br>
 
     <br>
 
     <label for="phone">Phone Number:</label><br>
-      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+      <input type="tel" id="phone" name="phone" placeholder="i.e. 123-456-7891" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
 
     <br>
 
     <label for="ship_addr">Shipping Address:</label>
     <br>
-      <textarea name="ship_addr" rows="10" cols="30">
+      <textarea name="ship_addr" rows="10" cols="30" required>
       </textarea>
 
     <br>
 
-    <label for="ship_method">Shipping Method:</label><br>
+    <label for="ship_method" required>Shipping Method:</label><br>
       <input type="radio" id="overnight" name="ship_method" value="overnight">
       <label for="overnight">Overnight</label><br>
 
@@ -86,7 +86,7 @@
 
     <label for="credit_card">Credit Card Information</label><br>
       <label for="card_num">Card Number:</label><br>
-      <input type="number" id="card_num" name="card_num"><br><br>
+      <input type="number" id="card_num" name="card_num" required><br><br>
 
       <label for="expiry1">Expiry Date:</label><br>
       <select id="expiry1" name="expiry1">
@@ -120,9 +120,9 @@
       <br>
       <br>
 
-      <!-- 3 digit number -->
+      <!-- 3 or 4 digit number depending on credit card type -->
       <label for="sCode">Security Code:</label><br>
-      <input type="number" id="sCode" name="sCode"><br><br>
+      <input type="number" id="sCode" name="sCode" required><br><br>
 
     <br>
     <br>
@@ -133,3 +133,18 @@
 
 </body>
 </html>
+
+<!-- Form data validation checklist
+1. Product identifier/////// NEEDS MORE TESTING
+2. Quantity //////////////// DONE
+3. First name////////////// IS THERE ANY OTHER METRICS WE NEED FOR TESTING THIS VALIDATION?
+4. Last Name/////////////// IS THERE ANY OTHER METRICS WE NEED FOR TESTING THIS VALIDATION?
+5. Phone Number///////////// needs more work since it accepts: 000-000-0000
+6. Shipping Address
+7. Shipping method///////// CHECK WITH JS
+8. Credit Card number////// CHECK WITH JS
+9. Security Code//////////  CHECK WITH JS
+ -->
+
+ <!-- Getting form data to put in body of email:
+Probably need to use JS-->

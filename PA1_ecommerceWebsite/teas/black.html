@@ -42,7 +42,21 @@
     <legend>Purchase Order Form</legend>
     <br>
     <label for="pid">Product Identifier:</label><br>
-      <input type="text" id="pid" name="pid" placeholder="i.e. Black Milk Tea" required><br>   <!-- input type as text given identifier is the name of the drink -->
+    <select name="pid" id="pid" required>
+      <option value="select">Select</option>
+      <option value="black">Black Milk Tea</option>
+      <option value="coffee">Coffee Milk Tea</option>
+      <option value="earl">Earl Grey Milk Tea</option>
+      <option value="jasmine">Jasmine Milk Tea</option>
+      <option value="mango">Mango Lychee Tea</option>
+      <option value="oolong">Oolong Milk Tea</option>
+      <option value="panda">Panda Milk Tea</option>
+      <option value="peach">Peach Green Tea</option>
+      <option value="taro">Taro Milk Tea</option>
+      <option value="thai">Thai Iced Tea</option>
+    </select>
+    <br>
+    <!--  <input type="text" id="pid" name="pid" placeholder="i.e. Black Milk Tea" required><br>-->
 <!--maxlength="25" -->
 <!--pattern="[A-Za-z\sA-Za-z\sA-Za-z\s]{13,25}"-->
     <br>
@@ -67,26 +81,36 @@
 
     <br>
 
-    <label for="ship_addr">Shipping Address:</label>
-    <br>
-      <textarea name="ship_addr" rows="10" cols="30" required>
-      </textarea>
+    <label for="ship_addr"><u>Shipping Address Information</u></label><br>
+      <label for="addr">Address:</label><br>
+        <input type="text" id="addr" name="addr" placeholder="i.e. 1234 W Irvine Dr." required><br>
+        <input type="text" id="add2" name="add2" placeholder="i.e. Apt/Suite/Bldg"><br><br>
+
+      <label for="city">City:</label><br>
+        <input type="text" id="city" name="city" pattern="[A-Za-z]{1,32}" required><br><br>
+
+      <label for="state">State:</label><br>
+        <input type="text" id="state" name="state" pattern="[A-Z]{2,2}" placeholder="i.e. CA" required><br><br>
+
+      <lavel for="zip_code">Zip Code:</label><br>
+        <input type="text" id="zip_code" name="zip_code" pattern="[0-9]{5,5}" required>
 
     <br>
+    <br>
 
-    <label for="ship_method" required>Shipping Method:</label><br>
-      <input type="radio" id="overnight" name="ship_method" value="overnight">
+    <label for="ship_method">Shipping Method:</label><br>
+      <input type="radio" id="overnight" name="ship_method" value="overnight" required>
       <label for="overnight">Overnight</label><br>
 
-      <input type="radio" id="2day" name="ship_method" value="2day">
+      <input type="radio" id="2day" name="ship_method" value="2day" required>
       <label for="2day">2-day expedited</label><br>
 
-      <input type="radio" id="6day" name="ship_method" value="6day">
+      <input type="radio" id="6day" name="ship_method" value="6day" required>
       <label for="6day">6-days ground</label><br>
 
     <br>
 
-    <label for="credit_card">Credit Card Information</label><br>
+    <label for="credit_card"><u>Credit Card Information</u></label><br>
       <label for="card_num">Card Number:</label><br>
       <input type="number" id="card_num" name="card_num" required><br><br>
 
@@ -124,7 +148,7 @@
 
       <!-- 3 or 4 digit number depending on credit card type -->
       <label for="sCode">Security Code:</label><br>
-      <input type="number" id="sCode" name="sCode" required><br><br>
+      <input type="text" id="sCode" name="sCode" pattern="[0-9]{3,4}" required><br><br>
 
     <br>
     <br>
@@ -139,10 +163,11 @@
 <script>
 function validateForm(){
   //var x = document.forms["PurchaseOrderForm"]["pid"].value;
-  var id = document.getElementById("pid").value;
+  var product = document.getElementsByName("pid")[0].value;
   submitOK = "true";
 
-  if(id.compareTo("Thai Iced Tea") != 0 || id != Jasmine Milk Tea || id != Black Milk Tea ||
+/*
+  if(id != "Thai Iced Tea" !=  || id != Jasmine Milk Tea || id != Black Milk Tea ||
      id != Peach Green Tea || id != Taro Milk Tea || id != Coffee Milk Tea ||
      id != Earl Grey Milk Tea || id != Panda Milk Tea || id != Oolong Milk Tea ||
      id != Mango Lychee Tea){
@@ -150,25 +175,31 @@ function validateForm(){
           alert(id);
           submitOK = "false";
      }
+*/
+
+// For product identifier
+  if(product == "select"){
+    alert("Please choose a valid product identifier.");
+    submitOK = "false";
+  }
 
   if(submitOK == "false"){
     return false;
   }
-  console.log(getInputValueById("pid"));
 }
 </script>
 </html>
 
 <!-- Form data validation checklist
-1. Product identifier/////// NEEDS MORE TESTING
-2. Quantity //////////////// DONE
-3. First name////////////// IS THERE ANY OTHER METRICS WE NEED FOR TESTING THIS VALIDATION?
-4. Last Name/////////////// IS THERE ANY OTHER METRICS WE NEED FOR TESTING THIS VALIDATION?
-5. Phone Number///////////// needs more work since it accepts: 000-000-0000
-6. Shipping Address
-7. Shipping method///////// CHECK WITH JS
-8. Credit Card number////// CHECK WITH JS
-9. Security Code//////////  CHECK WITH JS
+1. Product identifier/////// DONE - since changed to drop-down menu
+2. Quantity //////////////// DONE - max quantity: 5
+3. First name/////////////// DONE - max length: 32
+4. Last Name//////////////// DONE - max length: 32
+5. Phone Number///////////// DONE (kinda) - accepts: 000-000-0000
+6. Shipping Address  - Still working on address validation
+7. Shipping method////////// DONE
+8. Credit Card number////// work on 3rd
+9. Security Code//////////  work on 4th
  -->
 
  <!-- Getting form data to put in body of email:

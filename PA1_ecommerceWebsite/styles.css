@@ -1,38 +1,4 @@
 /* @media stuff */
-@media only screen and (max-width: 600px)
-{
-  body{
-    background-color: lightblue;
-  }
-
-  img {
-    height: 50px;
-    width: 60px;
-    padding: 5px 5px;
-  }
-
-  .grid-container {
-    display: inline-grid;
-    padding: 0 75px;
-    width: 10%;
-    grid-template-columns: none
-  }
-  .grid-item {
-    width: 100px;
-    height: 200px;
-    padding: 2.5px;
-  }
-  .grid-item-text {
-    font-size: 9px;
-    text-align: center;
-  }
-  .img-boba {
-    height: 50px;
-    width: 60px;
-    padding: 5px 5px;
-
-  }
-}
 
 /* ids */
 #menu {
@@ -143,22 +109,69 @@ header{
 .team-text {
   padding-bottom: 180px
 }
-.menu td{
+.menu-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+.menu-item {
+
+}
+@media only screen and (max-width: 725px)
+{
+  .menu-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+}
+@media only screen and (max-width: 540px)
+{
+  .menu-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+}
+@media only screen and (max-width: 420px)
+{
+
+  .menu-container{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+}
+@media only screen and (max-width: 200px)
+{
+  .menu-container{
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+}
+/* .menu-item {
+  width: 20%;
+  height: 2em;
+  border: none;
+  text-align: center;
+} */
+
+.menu-item td{
   width: 20%;
   height: 2em;
   border: none;
   text-align: center;
 }
-.menu img{
+.menu-item img{
   width: 15vw;
   height: 12vw;
 }
-.menu a{
+.menu-item a{
   color: black;
   text-decoration: none;
 
 }
-.menu td:hover{
+.menu-item td:hover{
   background-color: orange;
   text-decoration: none;
 
@@ -220,3 +233,37 @@ footer p{
   font-size: 0.8vw;
   padding-right: 20px;
 }
+
+/* graveyard code */
+
+/* body{
+  background-color: lightblue;
+}
+
+img {
+  height: 50px;
+  width: 60px;
+  padding: 5px 5px;
+}
+
+.grid-container {
+  display: grid;
+ padding: 0 75px;
+  width: 10%;
+  grid-template-columns: auto auto auto auto auto;
+}
+.grid-item {
+  width: 100px;
+  height: 200px;
+  padding: 2.5px;
+}
+.grid-item-text {
+  font-size: 9px;
+  text-align: center;
+}
+.img-boba {
+  height: 50px;
+  width: 60px;
+  padding: 5px 5px;
+
+} */

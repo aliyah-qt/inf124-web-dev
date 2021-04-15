@@ -21,10 +21,10 @@
 </header>
 <body>
   <div class="prod-view">
-    <!-- more images of black tea -->
-    <img src="images/blackmilktea.jpeg" alt="black milk tea">
+    <!-- more images -->
+    <img src="../images/blackmilktea.jpeg" alt="black milk tea">
 
-<!-- detailed description of black tea -->
+<!-- detailed description -->
     <p>Black tea sweetened with sugar, simple syrup, and creamer.</p>
 
 
@@ -82,9 +82,10 @@
     <br>
 
     <label for="ship_addr"><u>Shipping Address Information</u></label><br>
-      <label for="addr">Address:</label><br>
-        <input type="text" id="addr" name="addr" placeholder="i.e. 1234 W Irvine Dr." required><br>
-        <input type="text" id="add2" name="add2" placeholder="i.e. Apt/Suite/Bldg"><br><br>
+      <label for="addr">Street:</label><br>
+        <input type="text" id="addr" name="addr" placeholder="i.e. 1234 W Irvine Dr." required><br><br>
+      <label for="addr">Apt/Suite/Bldg:</label><br>
+        <input type="text" id="addr2" name="addr2"><br><br>
 
       <label for="city">City:</label><br>
         <input type="text" id="city" name="city" pattern="[A-Za-z]{1,32}" required><br><br>
@@ -112,7 +113,7 @@
 
     <label for="credit_card"><u>Credit Card Information</u></label><br>
       <label for="card_num">Card Number:</label><br>
-      <input type="number" id="card_num" name="card_num" required><br><br>
+      <input type="text" id="card_num" name="card_num" pattern="[0-9]{13,16}" required><br><br>
 
       <label for="expiry1">Expiry Date:</label><br>
       <select id="expiry1" name="expiry1">
@@ -146,7 +147,6 @@
       <br>
       <br>
 
-      <!-- 3 or 4 digit number depending on credit card type -->
       <label for="sCode">Security Code:</label><br>
       <input type="text" id="sCode" name="sCode" pattern="[0-9]{3,4}" required><br><br>
 
@@ -159,48 +159,10 @@
 
 </body>
 
-<!-- beginning of form validation (Javascript) -->
-<script>
-function validateForm(){
-  //var x = document.forms["PurchaseOrderForm"]["pid"].value;
-  var product = document.getElementsByName("pid")[0].value;
-  submitOK = "true";
+<!-- Runs form validation code from external JS file -->
+<script src="../teas/form_validation.js"></script>
 
-/*
-  if(id != "Thai Iced Tea" !=  || id != Jasmine Milk Tea || id != Black Milk Tea ||
-     id != Peach Green Tea || id != Taro Milk Tea || id != Coffee Milk Tea ||
-     id != Earl Grey Milk Tea || id != Panda Milk Tea || id != Oolong Milk Tea ||
-     id != Mango Lychee Tea){
-          alert("Please enter a valid product identifier.");
-          alert(id);
-          submitOK = "false";
-     }
-*/
-
-// For product identifier
-  if(product == "select"){
-    alert("Please choose a valid product identifier.");
-    submitOK = "false";
-  }
-
-  if(submitOK == "false"){
-    return false;
-  }
-}
-</script>
 </html>
-
-<!-- Form data validation checklist
-1. Product identifier/////// DONE - since changed to drop-down menu
-2. Quantity //////////////// DONE - max quantity: 5
-3. First name/////////////// DONE - max length: 32
-4. Last Name//////////////// DONE - max length: 32
-5. Phone Number///////////// DONE (kinda) - accepts: 000-000-0000
-6. Shipping Address  - Still working on address validation
-7. Shipping method////////// DONE
-8. Credit Card number////// work on 3rd
-9. Security Code//////////  work on 4th
- -->
 
  <!-- Getting form data to put in body of email:
 Probably need to use JS-->

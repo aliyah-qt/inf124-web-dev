@@ -38,3 +38,10 @@ function validateForm(){
     return false;
   }
 }
+
+/*
+function emailBodyFormat(){
+  var formattedBody = "Product Identifier: \nQuantity: \nFirst Name: \nLast Name: \nPhone Number: \nStreet Address: \nCity: \nState: \nShipping Method: \nExpiry Date: \nSecurity Code: ";
+  var mailToLink = "mailto:anteater@uci.edu?subject=Purchase%20Order%20Information?body=" + formattedBody;
+}
+*/

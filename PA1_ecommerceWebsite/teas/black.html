@@ -15,7 +15,7 @@
       <a class="navbar" href="../index.html">Home</a>
       <a class="navbar" href="../team.html">The Team</a>
       <a class="navbar" href="../menu.html">Menu</a>
-      
+
 
     </div>
 </header>
@@ -30,14 +30,15 @@
 
 </div>
 <br>
-
+<!--  action="mailto:anteater@uci.edu?subject=Purchase%20Order%20Information&body=sample%20body" -->
 <!-- order form -->
 <!-- Currently not displaying body of email -->
 <form name="PurchaseOrderForm"
-  onsubmit="return validateForm()"
-  action="mailto:anteater@uci.edu?subject=Purchase%20Order%20Information&body=sample%20body"
+  onsubmit="return validateForm() && emailBodyFormat()"
+  action="mailto:anteater@uci.edu?subject=Purchase%20Order%20Information"
   method="POST"
-  enctype="multipart/form-data">
+  enctype="text/plain">
+  <!--"multipart/form-data"-->
   <fieldset>
     <legend>Purchase Order Form</legend>
     <br>
@@ -56,9 +57,7 @@
       <option value="thai">Thai Iced Tea</option>
     </select>
     <br>
-    <!--  <input type="text" id="pid" name="pid" placeholder="i.e. Black Milk Tea" required><br>-->
-<!--maxlength="25" -->
-<!--pattern="[A-Za-z\sA-Za-z\sA-Za-z\s]{13,25}"-->
+
     <br>
 
     <label for="qty">Quantity:</label><br>

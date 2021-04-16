@@ -24,7 +24,7 @@
     <!-- more images -->
     <img src="../images/panda.jpeg" alt="panda milk tea">
 
-<!-- detailed description -->
+    <!-- detailed description -->
     <p>Classic milk tea with black and white tapioca pearls.</p>
 
 
@@ -32,106 +32,104 @@
 <br>
 
 <!-- order form -->
-<!-- Currently not displaying body of email -->
 <form name="PurchaseOrderForm"
   onsubmit="return validateForm()"
-  action="mailto:anteater@uci.edu?subject=Purchase%20Order%20Information&body=sample%20body"
+  action="mailto:anteater@uci.edu?subject=Purchase%20Order%20Information"
   method="POST"
   enctype="text/plain">
+
   <fieldset>
     <legend>Purchase Order Form</legend>
     <br>
     <label for="pid">Product Identifier:</label><br>
-    <select name="pid" id="pid" required>
-      <option value="select">Select</option>
-      <option value="black">Black Milk Tea</option>
-      <option value="coffee">Coffee Milk Tea</option>
-      <option value="earl">Earl Grey Milk Tea</option>
-      <option value="jasmine">Jasmine Milk Tea</option>
-      <option value="mango">Mango Lychee Tea</option>
-      <option value="oolong">Oolong Milk Tea</option>
-      <option value="panda">Panda Milk Tea</option>
-      <option value="peach">Peach Green Tea</option>
-      <option value="taro">Taro Milk Tea</option>
-      <option value="thai">Thai Iced Tea</option>
+    <select name="Product Identifier" id="pid" required>
+      <option value="Select">Select</option>
+      <option value="Black Milk Tea">Black Milk Tea</option>
+      <option value="Coffee Milk Tea">Coffee Milk Tea</option>
+      <option value="Earl Grey Milk Tea">Earl Grey Milk Tea</option>
+      <option value="Jasmine Milk Tea">Jasmine Milk Tea</option>
+      <option value="Mango Lychee Tea">Mango Lychee Tea</option>
+      <option value="Oolong Milk Tea">Oolong Milk Tea</option>
+      <option value="Panda Milk Tea">Panda Milk Tea</option>
+      <option value="Peach Green Tea">Peach Green Tea</option>
+      <option value="Taro Milk Tea">Taro Milk Tea</option>
+      <option value="Thai Iced Tea">Thai Iced Tea</option>
     </select>
     <br>
-    <!--  <input type="text" id="pid" name="pid" placeholder="i.e. Black Milk Tea" required><br>-->
-<!--maxlength="25" -->
-<!--pattern="[A-Za-z\sA-Za-z\sA-Za-z\s]{13,25}"-->
+
     <br>
 
     <label for="qty">Quantity:</label><br>
-      <input type="number" id="qty" name="qty" min="1" max="5" required><br>
+      <input type="number" id="qty" name="Quantity" min="1" max="5" required><br>
 
     <br>
 
     <label for="fname">First Name:</label><br>
-      <input type="text" id="fname" maxlength="32" name="fname" pattern="[A-Za-z]{1,32}" required><br>
+      <input type="text" id="fname" maxlength="32" name="First Name" pattern="[A-Za-z]{1,32}" required><br>
 
     <br>
 
     <label for="lname">Last Name:</label><br>
-      <input type="text" id="lname" maxlength="32" name="lname" pattern="[A-Za-z]{1,32}" required><br>
+      <input type="text" id="lname" maxlength="32" name="Last Name" pattern="[A-Za-z]{1,32}" required><br>
 
     <br>
 
     <label for="phone">Phone Number:</label><br>
-      <input type="tel" id="phone" name="phone" placeholder="i.e. 123-456-7891" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+      <input type="tel" id="phone" name="Phone Number" placeholder="i.e. 123-456-7891" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
 
     <br>
 
     <label for="ship_addr"><u>Shipping Address Information</u></label><br>
       <label for="addr">Street:</label><br>
-        <input type="text" id="addr" name="addr" placeholder="i.e. 1234 W Irvine Dr." required><br><br>
+        <input type="text" id="addr" name="Address Line 1" placeholder="i.e. 1234 W Irvine Dr." required><br><br>
       <label for="addr">Apt/Suite/Bldg:</label><br>
-        <input type="text" id="addr2" name="addr2"><br><br>
+        <input type="text" id="addr2" name="Address Line 2" placeholder="i.e. Apt 4"><br><br>
 
       <label for="city">City:</label><br>
-        <input type="text" id="city" name="city" pattern="[A-Za-z]{1,32}" required><br><br>
+        <input type="text" id="city" name="City" pattern="[A-Za-z]{1,32}" required><br><br>
 
       <label for="state">State:</label><br>
-        <input type="text" id="state" name="state" pattern="[A-Z]{2,2}" placeholder="i.e. CA" required><br><br>
+        <input type="text" id="state" name="State" pattern="[A-Z]{2,2}" placeholder="i.e. CA" required><br><br>
 
       <lavel for="zip_code">Zip Code:</label><br>
-        <input type="text" id="zip_code" name="zip_code" pattern="[0-9]{5,5}" required>
+        <input type="text" id="zip_code" name="Zip Code" pattern="[0-9]{5,5}" required>
 
     <br>
     <br>
 
     <label for="ship_method">Shipping Method:</label><br>
-      <input type="radio" id="overnight" name="ship_method" value="overnight" required>
+      <input type="radio" id="overnight" name="Shipping Method" value="Overnight" required>
       <label for="overnight">Overnight</label><br>
 
-      <input type="radio" id="2day" name="ship_method" value="2day" required>
+      <input type="radio" id="2day" name="Shipping Method" value="2day" required>
       <label for="2day">2-day expedited</label><br>
 
-      <input type="radio" id="6day" name="ship_method" value="6day" required>
+      <input type="radio" id="6day" name="Shipping Method" value="6day" required>
       <label for="6day">6-days ground</label><br>
 
     <br>
 
     <label for="credit_card"><u>Credit Card Information</u></label><br>
       <label for="card_num">Card Number:</label><br>
-      <input type="text" id="card_num" name="card_num" pattern="[0-9]{13,16}" required><br><br>
+      <input type="text" id="card_num" name="Card Number" pattern="[0-9]{13,16}" required><br><br>
 
       <label for="expiry1">Expiry Date:</label><br>
-      <select id="expiry1" name="expiry1">
-        <option value="january">01</option>
-        <option value="february">02</option>
-        <option value="march">03</option>
-        <option value="april">04</option>
-        <option value="may">05</option>
-        <option value="june">06</option>
-        <option value="july">07</option>
-        <option value="august">08</option>
-        <option value="september">09</option>
-        <option value="october">10</option>
-        <option value="november">11</option>
-        <option value="december">12</option>
+      <select id="expiry1" name="Expiration Month">
+        <option value="January">01</option>
+        <option value="February">02</option>
+        <option value="March">03</option>
+        <option value="April">04</option>
+        <option value="May">05</option>
+        <option value="June">06</option>
+        <option value="July">07</option>
+        <option value="August">08</option>
+        <option value="September">09</option>
+        <option value="October">10</option>
+        <option value="November">11</option>
+        <option value="December">12</option>
       </select>
 
-      <select id="expiry2" name="expiry2">
+      <select id="expiry2" name="Expiration Year">
         <option value="2021">21</option>
         <option value="2022">22</option>
         <option value="2023">23</option>
@@ -148,7 +146,7 @@
       <br>
 
       <label for="sCode">Security Code:</label><br>
-      <input type="text" id="sCode" name="sCode" pattern="[0-9]{3,4}" required><br><br>
+      <input type="text" id="sCode" name="Security Code" pattern="[0-9]{3,4}" required><br><br>
 
     <br>
     <br>

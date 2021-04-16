@@ -179,16 +179,21 @@ header{
 
 }
 
+.prod-view{
+  float: left;
+  padding-left: 10vw;
+  padding-top: 3vw;
+}
 .prod-view img {
   padding-top: 10px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 
 }
 
 .prod-view p{
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
 
@@ -265,6 +270,11 @@ footer p{
   padding-right: 20px;
 }
 
+form{
+  float: right;
+  width: 33%;
+  padding-right: 10vw;
+}
 /* graveyard code */
 
 /* body{

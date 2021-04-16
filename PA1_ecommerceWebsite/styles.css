@@ -224,6 +224,35 @@ header{
 
 }
 
+/* Styling for form */
+.order_form{
+  position: absolute;
+  width: 75%;
+  text-align: left;
+  background-color: #a09fe6;
+}
+
+/* Styling for form contd. */
+legend{
+  text-align: center;
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+/* Styling for form contd. */
+input[type=submit]{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 75%;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
 footer{
   border-top: solid;
   font-family: Arial, Helvetica, sans-serif;

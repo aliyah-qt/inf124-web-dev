@@ -1,10 +1,15 @@
 function validateForm(){
   var product = document.getElementsByName("Product Identifier")[0].value;
+  var sugarLevel = document.getElementsByName("Sugar Level")[0].value;
   submitOK = "true";
 
   // For product identifier
   if(product == "Select"){
     alert("Please choose a valid product identifier.");
+    submitOK = "false";
+  }
+  if(sugarLevel == "Select"){
+    alert("Please choose a valid sugar level.");
     submitOK = "false";
   }
 

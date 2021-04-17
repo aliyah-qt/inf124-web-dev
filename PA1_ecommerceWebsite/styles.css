@@ -181,12 +181,16 @@ header{
 
 .prod-view{
   float: left;
-  padding-left: 10vw;
+  padding-left: 12vw;
   padding-top: 3vw;
 }
 .prod-view img {
   padding-top: 10px;
-  display: block;
+  /* align-items: center; */
+  /* display: block; */
+  width: 400px; 
+  height: 300px; 
+  overflow: hidden;
 
 }
 

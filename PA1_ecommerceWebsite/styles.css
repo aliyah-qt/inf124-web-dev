@@ -113,9 +113,7 @@ header{
   display: grid;
   grid-template-columns: auto auto auto auto auto;
 }
-.menu-item {
 
-}
 @media only screen and (max-width: 725px)
 {
   .menu-container{
@@ -182,14 +180,14 @@ header{
 .prod-view{
   float: left;
   padding-left: 3vw;
-  /* align-items: center; */
   padding-top: 3vw;
-  /* border: solid; */
+
+
 }
 .prod-view img {
   padding-top: 10px;
   align-items: center;
-  /* display: block; */
+  display: block;
   width: 400px;
   height: 300px;
   overflow: hidden;
@@ -216,6 +214,7 @@ header{
   /* max-height: 100%; */
  /* width: 500px; */
  height: 700px;
+
  padding: 10px 25px;
  /* background-color: lightblue; */
 }
@@ -227,12 +226,7 @@ header{
   margin: 10px 25px;
 
 }
-#rightform{
-  float: right;
-}
-#leftform{
-  float: left;
-}
+
 
 .cover{
   top: 0;

@@ -201,7 +201,12 @@ header{
   font-family: Arial, Helvetica, sans-serif;
 
 }
-
+#rightform{
+  float: right;
+}
+#leftform{
+  float: left;
+}
 
 .cover{
   top: 0;

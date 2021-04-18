@@ -181,7 +181,7 @@ header{
 
 .prod-view{
   float: left;
-  padding-left: 12vw;
+  padding-left: 3vw;
   /* align-items: center; */
   padding-top: 3vw;
   /* border: solid; */
@@ -199,6 +199,32 @@ header{
 .prod-view p{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+
+}
+.prod-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+@media only screen and (max-width: 983px)
+{
+  .prod-container{
+    grid-template-columns: auto;
+  }
+}
+.prod-item {
+  max-width: 100%;
+  /* max-height: 100%; */
+ /* width: 500px; */
+ height: 700px;
+ padding: 10px 25px;
+ /* background-color: lightblue; */
+}
+.form-container{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.form-item{
+  margin: 10px 25px;
 
 }
 #rightform{
@@ -281,11 +307,12 @@ footer p{
   padding-right: 20px;
 }
 
-form{
-  float: right;
+/* form{
+   float: right;
   width: 33%;
-  padding-right: 10vw;
-}
+   padding-right: 10vw;
+  }*/
+
 /* graveyard code */
 
 /* body{

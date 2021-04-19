@@ -120,6 +120,9 @@ header{
     display: grid;
     grid-template-columns: auto auto auto auto;
   }
+  form{
+    padding-top: 100px;
+  }
   
 .prod-item{
   padding-bottom: 200px;
@@ -133,6 +136,7 @@ header{
     display: grid;
     grid-template-columns: auto auto auto;
   }
+  
   
 
 }
@@ -226,6 +230,7 @@ header{
  padding: 10px 25px;
  /* background-color: lightblue; */
 }
+
 .form-container{
   display: grid;
   grid-template-columns: auto auto;

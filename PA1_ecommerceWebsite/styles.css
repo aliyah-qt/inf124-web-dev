@@ -121,7 +121,9 @@ header{
     grid-template-columns: auto auto auto auto;
   }
   
-
+.prod-item{
+  padding-bottom: 200px;
+}
   
 
 }
@@ -187,6 +189,7 @@ header{
   padding-top: 3vw;
 
 
+
 }
 .prod-view img {
   padding-top: 10px;
@@ -218,6 +221,7 @@ header{
   /* max-height: 100%; */
  /* width: 500px; */
  height: 700px;
+
 
  padding: 10px 25px;
  /* background-color: lightblue; */

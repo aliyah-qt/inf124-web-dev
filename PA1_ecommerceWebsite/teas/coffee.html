@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
-    <title>Coffee Milk Tea</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <title>Coffee Milk Tea</title>
 </head>
 <header>
   <h1 class="boba-header">Unoriginal Boba Store</h1>
 
-    <div class="navbar-container">
+  <div class="navbar-container">
 
-      <a class="navbar" href="../index.html">Home</a>
-      <a class="navbar" href="../team.html">The Team</a>
-      <a class="navbar" href="../menu.html">Menu</a>
+    <a class="navbar" href="../index.html">Home</a>
+    <a class="navbar" href="../team.html">The Team</a>
+    <a class="navbar" href="../menu.html">Menu</a>
 
 
-    </div>
+  </div>
 </header>
+
 <body>
   <h2 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">COFFEE MILK TEA</h2>
 
@@ -31,7 +33,7 @@
         <p style="font-weight: bold; font-size: 20px;"> $4.75</p>
         <!-- detailed description -->
         <p>Hong Kong style milk tea with slanted coffee jelly.
-          <br>Part of our rotating specials hand-bottled 
+          <br>Part of our rotating specials hand-bottled
           <br>
           and ready for your fridge!</p>
 
@@ -40,11 +42,7 @@
     </div>
     <div class="prod-item">
       <!-- order form -->
-      <form name="PurchaseOrderForm"
-        onsubmit="return validateForm()"
-        action="mailto:anteater@uci.edu?subject=Purchase%20Order%20Information"
-        method="POST"
-        enctype="text/plain">
+      <form name="PurchaseOrderForm" onsubmit="return validateForm()" action="mailto:anteater@uci.edu?subject=Purchase%20Order%20Information" method="POST" enctype="text/plain">
 
         <fieldset>
           <legend>Purchase Order Form</legend>
@@ -54,28 +52,28 @@
 
               <label for="pid">Product Identifier:</label><br>
               <select name="Product Identifier" id="pid" required>
-              <option value="Select">Select</option>
-              <option value="Black Milk Tea">Black Milk Tea</option>
-              <option value="Coffee Milk Tea">Coffee Milk Tea</option>
-              <option value="Earl Grey Milk Tea">Earl Grey Milk Tea</option>
-              <option value="Jasmine Milk Tea">Jasmine Milk Tea</option>
-              <option value="Mango Lychee Tea">Mango Lychee Tea</option>
-              <option value="Oolong Milk Tea">Oolong Milk Tea</option>
-              <option value="Panda Milk Tea">Panda Milk Tea</option>
-              <option value="Peach Green Tea">Peach Green Tea</option>
-              <option value="Taro Milk Tea">Taro Milk Tea</option>
-              <option value="Thai Iced Tea">Thai Iced Tea</option>
+                <option value="Select">Select</option>
+                <option value="Black Milk Tea">Black Milk Tea</option>
+                <option value="Coffee Milk Tea">Coffee Milk Tea</option>
+                <option value="Earl Grey Milk Tea">Earl Grey Milk Tea</option>
+                <option value="Jasmine Milk Tea">Jasmine Milk Tea</option>
+                <option value="Mango Lychee Tea">Mango Lychee Tea</option>
+                <option value="Oolong Milk Tea">Oolong Milk Tea</option>
+                <option value="Panda Milk Tea">Panda Milk Tea</option>
+                <option value="Peach Green Tea">Peach Green Tea</option>
+                <option value="Taro Milk Tea">Taro Milk Tea</option>
+                <option value="Thai Iced Tea">Thai Iced Tea</option>
               </select>
               <br>
               <br>
               <label for="sugar">Sugar Level:</label><br>
               <select name="Sugar Level" id="sugar" required>
-              <option value="Select">Select</option>
-              <option value="100% Regular Sweet">100% Regular Sweet</option>
-              <option value="75% Sweet">75% Sweet</option>
-              <option value="50% Sweet">50% Sweet</option>
-              <option value="25% Sweet">25% Sweet</option>
-              <option value="No Sweet">No Sweet</option>
+                <option value="Select">Select</option>
+                <option value="100% Regular Sweet">100% Regular Sweet</option>
+                <option value="75% Sweet">75% Sweet</option>
+                <option value="50% Sweet">50% Sweet</option>
+                <option value="25% Sweet">25% Sweet</option>
+                <option value="No Sweet">No Sweet</option>
 
               </select>
               <br>
@@ -111,13 +109,13 @@
             </div><!-- class form item -->
             <div class="form-item">
               <label for="city">City:</label><br>
-                <input type="text" id="city" name="City" pattern="[A-Za-z]{1,32}" required><br><br>
+              <input type="text" id="city" name="City" pattern="[A-Za-z]{1,32}" required><br><br>
 
               <label for="state">State:</label><br>
-                <input type="text" id="state" name="State" size="5" pattern="[A-Z]{2,2}" placeholder="i.e. CA" required><br><br>
+              <input type="text" id="state" name="State" size="5" pattern="[A-Z]{2,2}" placeholder="i.e. CA" required><br><br>
 
               <label for="zip_code">Zip Code:</label><br>
-                <input type="text" id="zip_code" name="Zip Code" pattern="[0-9]{5,5}" required>
+              <input type="text" id="zip_code" name="Zip Code" pattern="[0-9]{5,5}" required>
 
               <br>
               <br>
@@ -177,8 +175,21 @@
 
               <input type="submit" value="Submit">
 
+
+        </fieldset>
+      </form>
+
     </div>
   </div>
+
+  <footer>
+    <br>
+    <p> 123 Alameda Street, Oakland, CA 94601</p>
+    <p>HOURS: 9AM-9PM DAILY</p>
+    <p>© 2021 POWERED BY THE UNORGINAL BOBA STORE</p>
+
+
+  </footer>
 
 </body>
 

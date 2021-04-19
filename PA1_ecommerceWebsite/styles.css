@@ -25,7 +25,25 @@
   text-align: center;
   text-indent: 30px;
   display: block;
-  padding-bottom: 100px;
+  padding: 100px 100px;
+  /* padding-bottom: 100px; */
+}
+
+@media only screen and (max-width: 525px){
+
+  #what-is-boba {
+    padding: 10% 25%;
+    margin: 10% 3%;
+    width: 300px;
+  }
+  #about-us {
+    padding: 10% 25%;
+    margin: 10% 3%;
+    width: 300px;
+  }
+  .cover  {
+    width: 600px;
+  }
 }
 
 
@@ -82,6 +100,7 @@ header{
 .team-header p {
   text-transform: none;
   margin-bottom: 7%;
+  line-height: 1.8;
 }
 .team-header hr{
   border-style: dotted;
@@ -123,11 +142,11 @@ header{
   form{
     padding-top: 100px;
   }
-  
+
 .prod-item{
   padding-bottom: 200px;
 }
-  
+
 
 }
 @media only screen and (max-width: 540px)
@@ -136,8 +155,8 @@ header{
     display: grid;
     grid-template-columns: auto auto auto;
   }
-  
-  
+
+
 
 }
 @media only screen and (max-width: 420px)
@@ -219,14 +238,23 @@ header{
   .prod-container{
     grid-template-columns: auto;
   }
+  .prod-view img{
+    width: 150px;
+    height:200px;
+    margin-left: 50%;
+
+
+  }
+  .prod-view p{
+    margin-left: 50%;
+    padding: auto;
+  }
 }
 .prod-item {
   max-width: 100%;
   /* max-height: 100%; */
  /* width: 500px; */
- height: 700px;
-
-
+ height: 800px;
  padding: 10px 25px;
  /* background-color: lightblue; */
 }
@@ -304,8 +332,20 @@ input[type=submit]{
 footer{
   border-top: solid;
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
 
 }
+
+
+@media only screen and (max-width: 525px){
+  footer {
+    width: 500px;
+  }
+  header {
+    width: 500px;
+  }
+}
+
 footer p{
   text-align: right;
   text-transform: uppercase;
@@ -320,7 +360,13 @@ footer p{
    padding-right: 10vw;
   }*/
 
+
+
+
 /* graveyard code */
+
+
+
 
 /* body{
   background-color: lightblue;

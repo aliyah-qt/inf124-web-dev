@@ -25,17 +25,9 @@
   text-align: center;
   text-indent: 30px;
   display: block;
+  padding-bottom: 100px;
 }
 
-#contact-us {
-  background-color: yellow;
-  /* padding: 7% 15%; */
-}
-
-#footer {
-  background-color: green;
-  /* padding: 3% 15%; */
-}
 
 
 /* classes */
@@ -121,12 +113,16 @@ header{
   grid-template-columns: auto auto auto auto auto;
 }
 
+
 @media only screen and (max-width: 725px)
 {
   .menu-container{
     display: grid;
     grid-template-columns: auto auto auto auto;
   }
+  
+
+  
 
 }
 @media only screen and (max-width: 540px)
@@ -135,6 +131,7 @@ header{
     display: grid;
     grid-template-columns: auto auto auto;
   }
+  
 
 }
 @media only screen and (max-width: 420px)
@@ -255,7 +252,6 @@ header{
 .cover p{
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
-  font-size: 1vw;
   background-color: black;
   border: 2px solid snow;
   padding: 14px 16px;
@@ -305,7 +301,7 @@ footer p{
   text-align: right;
   text-transform: uppercase;
   /*font-size: 0.8vw;*/
-  font-size: 1vw;
+  /* font-size: 1vw; */
   padding-right: 20px;
 }
 

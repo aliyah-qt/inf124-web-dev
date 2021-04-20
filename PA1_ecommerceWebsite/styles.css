@@ -32,13 +32,13 @@
 @media only screen and (max-width: 525px){
 
   #what-is-boba {
-    padding: 10% 25%;
-    margin: 10% 3%;
+    /* padding: 10% 25%;
+    margin: 10% 3%; */
     width: 300px;
   }
   #about-us {
-    padding: 10% 25%;
-    margin: 10% 3%;
+    /* padding: 10% 25%;
+    margin: 10% 3%; */
     width: 300px;
   }
   .cover  {

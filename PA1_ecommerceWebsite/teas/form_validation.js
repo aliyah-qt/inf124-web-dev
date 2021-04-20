@@ -14,10 +14,10 @@ function validateForm(){
   }
 
   // For street
-  var street_pattern = /^[0-9][0-9][0-9](?:[0-9])?(\s[A-za-z]+){2,}$/;
+  var street_pattern = /^[0-9][0-9][0-9](?:[0-9])?(\s[A-Za-z]+){2,}$/;
   /* ^[0-9] three times means string must begin with at least 3 digits
      (?:[0-9])? means it's optional to have a fourth digit at beginning of string
-     (\s[A-za-z]+) cannot contain digits, only alpha characters
+     (\s[A-Za-z]+) cannot contain digits, only alpha characters
      {2,} is at least 2 repetitions
   */
 
@@ -35,6 +35,18 @@ function validateForm(){
 
   if((apt != "") && (apt_pattern.test(apt) == false)){
     alert("Please input a valid apt/suite/bldg");
+    submitOK = "false";
+  }
+
+  //For city
+  var city_pattern = /^[a-zA-Z]+(?:[\s-][a-zA-Z]+){1,2}$/;
+  // /^[A-Za-z]+\s[A-Za-z]+\s[A-Za-z]+$/
+  // /^([A-Za-z]+)(?:\s[A-Za-z]+\s)?(?:[A-Za-z]+)?$/;
+  // /^[A-Za-z](?:\s[A-Za-z])?(?:\s[A-Za-z])?{1,3}$/;
+  var city = document.getElementById("city").value;
+
+  if(city_pattern.test(city) == false){
+    alert("Please input a valid city");
     submitOK = "false";
   }
 

@@ -289,11 +289,11 @@ header{
     grid-template-columns: auto;
   }
   .prod-view {
-    padding: 3vw 25%;
+    /* padding: 3vw 25%; */
   }
   form {
     width: 25%;
-    padding: 3vw 25%;
+    /* padding: 3vw 25%; */
   }
 
   .team-text p{

@@ -14,7 +14,7 @@ function validateForm(){
   }
 
   // For street
-  var street_pattern = /^[0-9][0-9][0-9](?:[0-9])?(\s[A-Za-z]+){2,}$/;
+  var street_pattern = /^[0-9][0-9][0-9](?:[0-9])?(?:[0-9])?(\s[A-Za-z]+){2,}$/;
   /* ^[0-9] three times means string must begin with at least 3 digits
      (?:[0-9])? means it's optional to have a fourth digit at beginning of string
      (\s[A-Za-z]+) cannot contain digits, only alpha characters
@@ -39,7 +39,7 @@ function validateForm(){
   }
 
   //For city
-  var city_pattern = /^[a-zA-Z]+(?:[\s-][a-zA-Z]+){1,2}$/;
+  var city_pattern = /^[a-zA-Z]+(?:[\s-][a-zA-Z]+){0,2}$/;
   // /^[A-Za-z]+\s[A-Za-z]+\s[A-Za-z]+$/
   // /^([A-Za-z]+)(?:\s[A-Za-z]+\s)?(?:[A-Za-z]+)?$/;
   // /^[A-Za-z](?:\s[A-Za-z])?(?:\s[A-Za-z])?{1,3}$/;

@@ -39,10 +39,7 @@ function validateForm(){
   }
 
   //For city
-  var city_pattern = /^[a-zA-Z]+(?:[\s-][a-zA-Z]+){0,2}$/;
-  // /^[A-Za-z]+\s[A-Za-z]+\s[A-Za-z]+$/
-  // /^([A-Za-z]+)(?:\s[A-Za-z]+\s)?(?:[A-Za-z]+)?$/;
-  // /^[A-Za-z](?:\s[A-Za-z])?(?:\s[A-Za-z])?{1,3}$/;
+  var city_pattern = /^[A-Za-z]+(?:[\s-][A-Za-z]+){0,2}$/;
   var city = document.getElementById("city").value;
 
   if(city_pattern.test(city) == false){

@@ -120,7 +120,7 @@
                 <input type="text" id="state" name="State" size="5" pattern="[A-Z]{2,2}" placeholder="i.e. CA" required><br><br>
 
               <label for="zip_code">Zip Code:</label><br>
-                <input type="text" id="zip_code" name="Zip Code" pattern="[0-9]{5,5}" required>
+                <input type="text" id="zip_code" name="Zip Code" pattern="[0-9]{5,5}" title="Zip code should be exactly 5 digits. e.g. 92801" required>
 
               <br>
               <br>
@@ -139,7 +139,7 @@
 
               <label for="credit_card"><u>Credit Card Information</u></label><br>
               <label for="card_num">Card Number:</label><br>
-              <input type="text" id="card_num" name="Card Number" pattern="[0-9]{13,16}" required><br><br>
+              <input type="text" id="card_num" name="Card Number" pattern="[0-9]{13,16}" title="Credit card number should be between 13 and 16 digits." required><br><br>
 
               <label for="expiry1">Expiry Date:</label><br>
               <select id="expiry1" name="Expiration Month">

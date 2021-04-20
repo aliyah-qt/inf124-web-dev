@@ -5,8 +5,7 @@ Aliyah F. Clayton
 Santiago Jr. Morales
 Samhitha Tarra
 
---
-GENERAL LAYOUT/DESIGN:
+--GENERAL LAYOUT/DESIGN:
 
   INDEX.HTML: 
   Our website lands on index.html which is the home page for our store (The Unoriginal Boba Store). On this page users can read a little about the business and what we do as well as navigate to browse the menu. 
@@ -23,7 +22,7 @@ GENERAL LAYOUT/DESIGN:
   TEAM.HTML:
   The team.html page has information about the members of the team and their background that led to the founding of the store.
   
- REQUIREMENTS TO BE SATISFIED:
+--REQUIREMENTS TO BE SATISFIED:
  
   1. Information about the team, products sold, and business overview can be found on THE TEAM page and on the HOME page.
   2. 10 boba menu items can be found on MENU page

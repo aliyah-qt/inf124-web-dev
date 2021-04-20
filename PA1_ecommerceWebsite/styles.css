@@ -29,23 +29,70 @@
   /* padding-bottom: 100px; */
 }
 
+
+.cover{
+  top: 0;
+  position: relative;
+  padding-bottom: 100px;
+}
+.cover img{
+      max-width: 100%;
+      max-height: auto;
+      font-size: 0;
+
+
+}
+.cover img:hover{
+  opacity: 0.8;
+}
+
+
+.cover p{
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  background-color: black;
+  border: 2px solid snow;
+  padding: 14px 16px;
+  z-index: 998;
+  position: absolute;
+  bottom: 170px;
+  left: 30px;
+  color: snow;
+
+}
+
 @media only screen and (max-width: 525px){
 
   #what-is-boba {
     /* padding: 10% 25%;
     margin: 10% 3%; */
-    width: 300px;
+    /* width: 300px; */
   }
   #about-us {
     /* padding: 10% 25%;
     margin: 10% 3%; */
-    width: 300px;
+    /* width: 300px; */
   }
   .cover  {
-    width: 600px;
+    width: 100%;
   }
 }
+@media only screen and (max-width: 399px){
 
+  #what-is-boba {
+    /* padding: 10% 25%;
+    margin: 10% 3%; */
+    /* width: 300px; */
+  }
+  #about-us {
+    /* padding: 10% 25%;
+    margin: 10% 3%; */
+    /* width: 300px; */
+  }
+  .cover  {
+    width: 100%;
+  }
+}
 
 
 /* classes */
@@ -268,37 +315,6 @@ header{
 
 }
 
-
-.cover{
-  top: 0;
-  position: relative;
-  padding-bottom: 100px;
-}
-.cover img{
-      max-width: 100%;
-      max-height: auto;
-      font-size: 0;
-
-
-}
-.cover img:hover{
-  opacity: 0.8;
-}
-
-
-.cover p{
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  background-color: black;
-  border: 2px solid snow;
-  padding: 14px 16px;
-  z-index: 998;
-  position: absolute;
-  bottom: 170px;
-  left: 30px;
-  color: snow;
-
-}
 
 /* Styling for form */
 .order_form{
